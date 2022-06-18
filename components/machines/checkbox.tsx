@@ -51,7 +51,6 @@ export function Checkbox(props: CheckboxProps) {
           top="0"
           left="0"
           boxSize="25px"
-          //   bg="#eee"
           rounded="md"
           border="solid 2px"
           borderColor="gray.400"
