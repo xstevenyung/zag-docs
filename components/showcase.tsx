@@ -1,3 +1,4 @@
+import { Checkbox } from "components/machines/checkbox"
 import { Accordion } from "./machines/accordion"
 import { Dialog } from "./machines/dialog"
 import { Editable } from "./machines/editable"
@@ -22,6 +23,16 @@ const components = {
         closeOnOutsideClick: true,
         closeOnEsc: true,
         role: { options: ["dialog", "alertdialog"], default: "dialog" },
+      }}
+    />
+  ),
+  Checkbox: () => (
+    <Playground
+      component={Checkbox}
+      defaultProps={{
+        indeterminate: false,
+        disabled: false,
+        readonly: false,
       }}
     />
   ),

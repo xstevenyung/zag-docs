@@ -27,6 +27,7 @@
     "@emotion/styled": "^11.8.1",
     "@reach/portal": "^0.17.0",
     "@zag-js/accordion": "0.1.7",
+    "@zag-js/checkbox": "^0.1.0",
     "@zag-js/combobox": "0.1.7",
     "@zag-js/dialog": "0.1.7",
     "@zag-js/editable": "0.1.8",
