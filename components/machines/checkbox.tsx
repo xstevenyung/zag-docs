@@ -72,8 +72,6 @@ export function Checkbox(props: CheckboxProps) {
               backgroundColor: "white",
               borderColor: "grey",
             },
-
-            /* Style the checkmark/indicator */
             "&[data-indeterminate]:after": {
               display: "block",
               left: "50%",
