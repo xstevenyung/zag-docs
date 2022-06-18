@@ -1,4 +1,4 @@
-import { chakra, CSSObject } from "@chakra-ui/system"
+import { chakra } from "@chakra-ui/system"
 import * as checkbox from "@zag-js/checkbox"
 import { mergeProps, useMachine, useSetup } from "@zag-js/react"
 
