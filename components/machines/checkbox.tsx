@@ -1,25 +1,6 @@
-import { Box } from "@chakra-ui/layout"
 import { chakra, CSSObject } from "@chakra-ui/system"
 import * as checkbox from "@zag-js/checkbox"
 import { mergeProps, useMachine, useSetup } from "@zag-js/react"
-
-const items = [
-  {
-    title: "Watercraft",
-    desc: "Yacht, Boats and Dinghies",
-    content: "Sample accordion content",
-  },
-  {
-    title: "Automobiles",
-    desc: "Cars, Trucks and Vans",
-    content: "Sample accordion content",
-  },
-  {
-    title: "Aircrafts",
-    desc: "Airplanes, Helicopters and Rockets",
-    content: "Sample accordion content",
-  },
-]
 
 type CheckboxProps = {
   controls: {
@@ -125,5 +106,3 @@ export function Checkbox(props: CheckboxProps) {
     </div>
   )
 }
-
-const checkboxStyle: CSSObject = {}
