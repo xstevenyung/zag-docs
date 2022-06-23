@@ -165,11 +165,11 @@ const [state, send] = useMachine(
   pinInput.machine({
     onChange(value) {
       // value => string[]
-      console.log("value changed to:", values)
+      console.log("value changed to:", value)
     },
     onComplete(value, valueAsString) {
       // value => string[], valueAsString => string
-      console.log("completed value:", values)
+      console.log("completed value:", value)
     },
     onInvalid(details) {
       // details => { index: number, value: string }
