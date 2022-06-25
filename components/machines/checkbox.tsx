@@ -38,6 +38,7 @@ export function Checkbox(props: CheckboxProps) {
         pl="35px"
         sx={{
           "--checked-color": "var(--colors-blue-500)",
+          "&[data-disabled]": { cursor: "not-allowed", opacity: 0.4 },
         }}
         ref={ref}
         {...api.rootProps}
@@ -61,9 +62,17 @@ export function Checkbox(props: CheckboxProps) {
             "&[data-hover]": {
               bg: "gray.100",
             },
+            "&[data-disabled]": {
+              bg: "gray.300",
+              borderColor: "gray.300",
+            },
             "&[data-checked]": {
               bg: "var(--checked-color)",
               borderColor: "var(--checked-color)",
+              "&[data-disabled]": {
+                bg: "gray.400",
+                borderColor: "gray.400",
+              },
             },
             "&[data-checked]:after": {
               display: "block",

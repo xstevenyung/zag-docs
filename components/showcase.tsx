@@ -1,4 +1,4 @@
-import { Checkbox } from "components/machines/checkbox"
+import { Checkbox } from "./machines/checkbox"
 import { Accordion } from "./machines/accordion"
 import { Dialog } from "./machines/dialog"
 import { Editable } from "./machines/editable"
