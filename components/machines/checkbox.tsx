@@ -65,6 +65,7 @@ export function Checkbox(props: CheckboxProps) {
           _indeterminate={{
             backgroundColor: "white",
             borderColor: "grey",
+            color: "grey",
           }}
           _checked={{
             bg: "blue.500",
@@ -93,17 +94,11 @@ export function Checkbox(props: CheckboxProps) {
           )}
           {api.view === "mixed" && (
             <chakra.svg
-              clipRule="evenodd"
-              fillRule="evenodd"
-              strokeLinejoin="round"
-              strokeMiterlimit="2"
               viewBox="0 0 24 24"
-              fill="currentcolor"
+              stroke="currentColor"
+              strokeWidth="4"
             >
-              <path
-                d="m21 11.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z"
-                fillRule="nonzero"
-              />
+              <line x1="21" x2="3" y1="12" y2="12" />
             </chakra.svg>
           )}
         </chakra.div>
