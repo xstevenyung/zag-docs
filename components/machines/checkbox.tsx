@@ -30,12 +30,13 @@ export function Checkbox(props: CheckboxProps) {
   return (
     <div>
       <chakra.label
-        pos="relative"
+        display="flex"
+        flexDirection="row-reverse"
+        gap="2"
         userSelect="none"
         cursor="pointer"
-        fontSize="22px"
+        fontSize="18"
         w="fit-content"
-        pl="35px"
         _disabled={{
           cursor: "not-allowed",
           opacity: 0.4,
@@ -43,14 +44,9 @@ export function Checkbox(props: CheckboxProps) {
         ref={ref}
         {...api.rootProps}
       >
-        <chakra.span {...api.labelProps}>
-          Input {api.isChecked ? "Checked" : "Unchecked"}
-        </chakra.span>
         <input {...inputProps} />
+        <chakra.span {...api.labelProps}>Checkbox Input</chakra.span>
         <chakra.div
-          pos="absolute"
-          top="0"
-          left="0"
           boxSize="25px"
           rounded="md"
           border="solid 2px"
