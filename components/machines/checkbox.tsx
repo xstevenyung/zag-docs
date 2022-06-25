@@ -36,9 +36,9 @@ export function Checkbox(props: CheckboxProps) {
         fontSize="22px"
         w="fit-content"
         pl="35px"
-        sx={{
-          "--checked-color": "var(--colors-blue-500)",
-          "&[data-disabled]": { cursor: "not-allowed", opacity: 0.4 },
+        _disabled={{
+          cursor: "not-allowed",
+          opacity: 0.4,
         }}
         ref={ref}
         {...api.rootProps}
@@ -55,59 +55,58 @@ export function Checkbox(props: CheckboxProps) {
           rounded="md"
           border="solid 2px"
           borderColor="gray.400"
+          _hover={{
+            bg: "gray.100",
+          }}
+          _disabled={{
+            bg: "gray.300",
+            borderColor: "gray.300",
+          }}
+          _indeterminate={{
+            backgroundColor: "white",
+            borderColor: "grey",
+          }}
+          _checked={{
+            bg: "blue.500",
+            borderColor: "blue.500",
+            color: "white",
+            _disabled: {
+              bg: "gray.400",
+              borderColor: "gray.400",
+            },
+          }}
           sx={{
             '[data-part="input"]:focus-visible ~ &': {
               outline: "2px solid royalblue",
             },
-            "&[data-hover]": {
-              bg: "gray.100",
-            },
-            "&[data-disabled]": {
-              bg: "gray.300",
-              borderColor: "gray.300",
-            },
-            "&[data-checked]": {
-              bg: "var(--checked-color)",
-              borderColor: "var(--checked-color)",
-              "&[data-disabled]": {
-                bg: "gray.400",
-                borderColor: "gray.400",
-              },
-            },
-            "&[data-checked]:after": {
-              display: "block",
-            },
-            "&[data-indeterminate]": {
-              backgroundColor: "white",
-              borderColor: "grey",
-            },
-            "&[data-indeterminate]:after": {
-              display: "block",
-              left: "50%",
-              top: "50%",
-              width: "13px",
-              height: "3px",
-              border: "none",
-              backgroundColor: "grey",
-              transform: "translate(-50%, -50%)",
-            },
-          }}
-          _after={{
-            content: '""',
-            position: "absolute",
-            display: "none",
-            left: "9px",
-            top: "5px",
-            width: "5px",
-            height: "10px",
-            border: "solid white",
-            borderWidth: "0 3px 3px 0",
-            webkitTransform: "rotate(45deg)",
-            msTransform: "rotate(45deg)",
-            transform: "rotate(45deg)",
           }}
           {...api.controlProps}
-        />
+        >
+          {api.view === "checked" && (
+            <chakra.svg
+              viewBox="0 0 24 24"
+              fill="currentcolor"
+              transform="scale(0.7)"
+            >
+              <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" />
+            </chakra.svg>
+          )}
+          {api.view === "mixed" && (
+            <chakra.svg
+              clipRule="evenodd"
+              fillRule="evenodd"
+              strokeLinejoin="round"
+              strokeMiterlimit="2"
+              viewBox="0 0 24 24"
+              fill="currentcolor"
+            >
+              <path
+                d="m21 11.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z"
+                fillRule="nonzero"
+              />
+            </chakra.svg>
+          )}
+        </chakra.div>
       </chakra.label>
     </div>
   )
