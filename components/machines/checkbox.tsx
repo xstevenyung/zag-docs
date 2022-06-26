@@ -32,6 +32,9 @@ export function Checkbox(props: CheckboxProps) {
           cursor: "not-allowed",
           opacity: 0.4,
         }}
+        _readOnly={{
+          cursor: "default",
+        }}
         ref={ref}
         {...api.rootProps}
       >
