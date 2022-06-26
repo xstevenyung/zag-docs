@@ -27,7 +27,6 @@ export function Checkbox(props: CheckboxProps) {
         userSelect="none"
         cursor="pointer"
         fontSize="18"
-        w="fit-content"
         _disabled={{
           cursor: "not-allowed",
           opacity: 0.4,
@@ -39,7 +38,7 @@ export function Checkbox(props: CheckboxProps) {
         {...api.rootProps}
       >
         <input {...api.inputProps} />
-        <chakra.span {...api.labelProps}>Checkbox Input</chakra.span>
+        <span {...api.labelProps}>Checkbox Input</span>
         <chakra.div
           boxSize="25px"
           rounded="md"
