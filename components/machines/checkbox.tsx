@@ -37,8 +37,8 @@ export function Checkbox(props: CheckboxProps) {
         ref={ref}
         {...api.rootProps}
       >
-        <input {...api.inputProps} />
         <span {...api.labelProps}>Checkbox Input</span>
+        <input data-peer {...api.inputProps} />
         <chakra.div
           boxSize="25px"
           rounded="md"
@@ -67,10 +67,8 @@ export function Checkbox(props: CheckboxProps) {
               borderColor: "gray.400",
             },
           }}
-          sx={{
-            '[data-part="input"]:focus-visible ~ &': {
-              outline: "2px solid royalblue",
-            },
+          _peerFocusVisible={{
+            outline: "2px solid royalblue",
           }}
           {...api.controlProps}
         >
