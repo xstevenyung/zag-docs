@@ -44,12 +44,13 @@ export function Checkbox(props: CheckboxProps) {
           rounded="md"
           border="solid 2px"
           borderColor="gray.400"
+          color="white"
           _hover={{
             bg: "gray.100",
           }}
           _disabled={{
-            bg: "gray.300",
-            borderColor: "gray.300",
+            bg: "gray.400",
+            borderColor: "gray.400",
           }}
           _indeterminate={{
             backgroundColor: "white",
@@ -57,14 +58,9 @@ export function Checkbox(props: CheckboxProps) {
             color: "grey",
           }}
           _checked={{
-            "&:not([data-indeterminate])": {
+            "&:not([data-indeterminate]):not([data-disabled])": {
               bg: "blue.500",
               borderColor: "blue.500",
-              color: "white",
-            },
-            _disabled: {
-              bg: "gray.400",
-              borderColor: "gray.400",
             },
           }}
           _peerFocusVisible={{
