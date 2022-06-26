@@ -55,9 +55,11 @@ export function Checkbox(props: CheckboxProps) {
             color: "grey",
           }}
           _checked={{
-            bg: "blue.500",
-            borderColor: "blue.500",
-            color: "white",
+            "&:not([data-indeterminate])": {
+              bg: "blue.500",
+              borderColor: "blue.500",
+              color: "white",
+            },
             _disabled: {
               bg: "gray.400",
               borderColor: "gray.400",
