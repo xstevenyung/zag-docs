@@ -54,6 +54,7 @@ const sidebar: Record<"docs", SidebarItem[]> = {
       id: "components",
       items: [
         { type: "doc", label: "Accordion", id: "accordion" },
+        { type: "doc", label: "Checkbox", id: "checkbox" },
         { type: "doc", label: "Dialog", id: "dialog" },
         { type: "doc", label: "Editable", id: "editable" },
         { type: "doc", label: "Menu", id: "menu" },
