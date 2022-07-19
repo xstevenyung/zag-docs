@@ -1,25 +1,22 @@
 ```jsx
 import * as tooltip from "@zag-js/tooltip"
-import { normalizeProps, useMachine, useSetup } from "@zag-js/vue"
+import { normalizeProps, useMachine } from "@zag-js/vue"
 import { computed, defineComponent, h, Fragment } from "vue"
 
 export default defineComponent({
   name: "Tooltip",
   setup() {
-    const [state, send] = useMachine(tooltip.machine)
+    const [state, send] = useMachine(tooltip.machine({ id: "1" }))
     const apiRef = computed(() =>
       tooltip.connect(state.value, send, normalizeProps),
     )
-    const ref = useSetup({ send, id: "1" })
 
     return () => {
       const api = apiRef.current
       return (
         <>
           <div>
-            <button ref={ref} {...api.triggerProps}>
-              Hover me
-            </button>
+            <button {...api.triggerProps}>Hover me</button>
             {api.isOpen && (
               <div {...api.positionerProps}>
                 <div {...api.contentProps}>Tooltip</div>

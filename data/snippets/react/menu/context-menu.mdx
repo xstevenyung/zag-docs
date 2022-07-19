@@ -1,18 +1,19 @@
 ```jsx
 import * as menu from "@zag-js/menu"
-import { useMachine, useSetup, normalizeProps } from "@zag-js/react"
+import { useMachine, normalizeProps } from "@zag-js/react"
 
 export function ContextMenu() {
   const [state, send] = useMachine(
     menu.machine({
+      id:'1',
       "aria-label": "File",
     }),
   )
   const api = menu.connect(state, send, normalizeProps)
-  const ref = useSetup({ send, id: "1" })
+
 
   return (
-    <div ref={ref}>
+    <div>
       <div {...api.contextTriggerProps}>
         <div>Open context menu</div>
       </div>

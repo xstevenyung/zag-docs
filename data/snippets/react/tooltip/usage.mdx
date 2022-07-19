@@ -1,17 +1,15 @@
 ```jsx
 import * as tooltip from "@zag-js/tooltip"
-import { useMachine, useSetup, normalizeProps } from "@zag-js/react"
+import { useMachine, normalizeProps } from "@zag-js/react"
 
 export function Tooltip() {
-  const [state, send] = useMachine(tooltip.machine)
-  const ref = useSetup({ send, id: "1" })
+  const [state, send] = useMachine(tooltip.machine({ id: "1" }))
+
   const api = tooltip.connect(state, send, normalizeProps)
 
   return (
     <>
-      <button ref={ref} {...api.triggerProps}>
-        Hover me
-      </button>
+      <button {...api.triggerProps}>Hover me</button>
       {api.isOpen && (
         <div {...api.positionerProps}>
           <div {...api.contentProps}>Tooltip</div>
