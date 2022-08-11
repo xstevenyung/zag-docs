@@ -238,7 +238,7 @@ export default function Home() {
           <chakra.h2 textStyle="display.xl" mb="10">
             The better way to model component logic
           </chakra.h2>
-          <chakra.p fontSize="md" className="has-highlight">
+          <chakra.div fontSize="md" className="x">
             Today, design systems are becoming a very popular toolkit for
             companies to create a cohesive and accessible user experience for
             their customers.
@@ -268,7 +268,7 @@ export default function Home() {
             <mark>
               Welcome to the future of building interactive components!
             </mark>
-          </chakra.p>
+          </chakra.div>
 
           <HStack mt="10" spacing="4">
             <Circle overflow="hidden" bg="gray.100">
