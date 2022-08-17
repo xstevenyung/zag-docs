@@ -23,6 +23,7 @@ specifiers:
   '@zag-js/number-input': 0.1.14
   '@zag-js/pin-input': 0.1.12
   '@zag-js/popover': 0.1.12
+  '@zag-js/radio': ^0.0.2
   '@zag-js/range-slider': 0.1.12
   '@zag-js/rating': 0.1.13
   '@zag-js/react': 0.1.14
@@ -78,6 +79,7 @@ dependencies:
   '@zag-js/number-input': 0.1.14
   '@zag-js/pin-input': 0.1.12
   '@zag-js/popover': 0.1.12
+  '@zag-js/radio': 0.0.2
   '@zag-js/range-slider': 0.1.12
   '@zag-js/rating': 0.1.13
   '@zag-js/react': 0.1.14_react@18.2.0
@@ -1632,6 +1634,13 @@ packages:
       '@floating-ui/dom': 1.0.0
     dev: false
 
+  /@zag-js/radio/0.0.2:
+    resolution: {integrity: sha512-zSsF1ky6OOUDs5P6jt7p+W9UOym8aH117VdsDvoUCpTcGaaSNWqXQnDd5wx1IWGvl78vuTchk0RRrq0e5U4Gqw==}
+    dependencies:
+      '@zag-js/core': 0.1.9
+      '@zag-js/types': 0.2.4
+    dev: false
+
   /@zag-js/range-slider/0.1.12:
     resolution: {integrity: sha512-0eUeHCxMuBpoJh3+ToyTqsMfwK+9jZaA9/xH7ZBISzB5C02AjVkmdjFIOnjbIu+Aq0xad8LswZ22BlXUcgmPTQ==}
     dependencies:
@@ -1725,6 +1734,12 @@ packages:
 
   /@zag-js/types/0.2.3:
     resolution: {integrity: sha512-MjZIyf/vi0Ke2ZWWrR5O8Ei7xfr6QmzIpGbWEKePS0VvrjsJYaPWHPNHV7bMRZyNQnl1+Isq8uItSGs2n7Sg5g==}
+    dependencies:
+      csstype: 3.1.0
+    dev: false
+
+  /@zag-js/types/0.2.4:
+    resolution: {integrity: sha512-ZToipRbJQXnM6V/BwJphUf5PiozO1qKxOhJRvJOa2T80avYmVwXJSL6IKbpWbSntmKVzCuUTQOeI5/sTR1jcRg==}
     dependencies:
       csstype: 3.1.0
     dev: false

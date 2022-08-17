@@ -1,4 +1,5 @@
 import { Checkbox } from "./machines/checkbox"
+import { Radio } from "./machines/radio"
 import { Accordion } from "./machines/accordion"
 import { Dialog } from "./machines/dialog"
 import { Editable } from "./machines/editable"
@@ -31,6 +32,15 @@ const components = {
       component={Checkbox}
       defaultProps={{
         indeterminate: false,
+        disabled: false,
+        readonly: false,
+      }}
+    />
+  ),
+  Radio: () => (
+    <Playground
+      component={Radio}
+      defaultProps={{
         disabled: false,
         readonly: false,
       }}

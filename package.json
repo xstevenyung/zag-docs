@@ -35,6 +35,7 @@
     "@zag-js/number-input": "0.1.14",
     "@zag-js/pin-input": "0.1.12",
     "@zag-js/popover": "0.1.12",
+    "@zag-js/radio": "^0.0.2",
     "@zag-js/range-slider": "0.1.12",
     "@zag-js/rating": "0.1.13",
     "@zag-js/react": "0.1.14",
