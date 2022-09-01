@@ -14,7 +14,8 @@
     "gen:component": "plop component",
     "contributors:add": "all-contributors add",
     "contributors:gen": "all-contributors generate",
-    "deps": "pnpm upgrade \"@zag-js/*\" --latest"
+    "deps": "pnpm upgrade \"@zag-js/*\" --latest",
+    "usedev": "pnpm upgrade \"@zag-js/*\"@dev"
   },
   "dependencies": {
     "@chakra-ui/cli": "^2.1.2",
@@ -35,6 +36,7 @@
     "@zag-js/number-input": "0.1.16",
     "@zag-js/pin-input": "0.1.14",
     "@zag-js/popover": "0.1.14",
+    "@zag-js/pressable": "0.2.0",
     "@zag-js/radio": "^0.0.3",
     "@zag-js/range-slider": "0.1.14",
     "@zag-js/rating": "0.1.15",

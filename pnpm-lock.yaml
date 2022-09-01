@@ -23,6 +23,7 @@ specifiers:
   '@zag-js/number-input': 0.1.16
   '@zag-js/pin-input': 0.1.14
   '@zag-js/popover': 0.1.14
+  '@zag-js/pressable': 0.2.0
   '@zag-js/radio': ^0.0.3
   '@zag-js/range-slider': 0.1.14
   '@zag-js/rating': 0.1.15
@@ -79,6 +80,7 @@ dependencies:
   '@zag-js/number-input': 0.1.16
   '@zag-js/pin-input': 0.1.14
   '@zag-js/popover': 0.1.14
+  '@zag-js/pressable': 0.2.0
   '@zag-js/radio': 0.0.3
   '@zag-js/range-slider': 0.1.14
   '@zag-js/rating': 0.1.15
@@ -1636,6 +1638,13 @@ packages:
     resolution: {integrity: sha512-1jbveJmbyctiGumjsYNv4nWMlRHvBFWt7KmeGSjoOEHiTcx2hEHH3gBu+/ZMwxH3cM4+ZhRM7IxN+5lY7tTKwQ==}
     dependencies:
       '@floating-ui/dom': 1.0.1
+    dev: false
+
+  /@zag-js/pressable/0.2.0:
+    resolution: {integrity: sha512-b2nItaU0qqw4TjoaPmrX7UtKhnsu5i2n0oKRbay09OhJ3Enc2FJ6auSb+rOwXoNVbdnlujYTzuruTK1bwJE2bQ==}
+    dependencies:
+      '@zag-js/core': 0.1.10
+      '@zag-js/types': 0.2.5
     dev: false
 
   /@zag-js/radio/0.0.3:

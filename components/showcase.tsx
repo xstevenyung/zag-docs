@@ -14,6 +14,7 @@ import { TagsInput } from "./machines/tags-input"
 import { ToastGroup } from "./machines/toast"
 import { Tooltip } from "./machines/tooltip"
 import { Playground } from "./playground"
+import { Pressable } from "components/machines/pressable"
 
 const components = {
   Dialog: () => (
@@ -89,6 +90,17 @@ const components = {
         },
         blurOnComplete: false,
         mask: false,
+      }}
+    />
+  ),
+  Pressable: () => (
+    <Playground
+      component={Pressable}
+      defaultProps={{
+        disabled: false,
+        preventFocusOnPress: false,
+        cancelOnPointerExit: false,
+        allowTextSelectionOnPress: false,
       }}
     />
   ),
