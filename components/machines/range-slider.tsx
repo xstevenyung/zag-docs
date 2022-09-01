@@ -9,7 +9,7 @@ export function RangeSlider(props: any) {
     slider.machine({
       id: useId(),
       name: "quantity",
-      value: [10, 60],
+      values: [10, 60],
     }),
     { context: props.controls },
   )
