@@ -14,6 +14,7 @@ import { TagsInput } from "./machines/tags-input"
 import { ToastGroup } from "./machines/toast"
 import { Tooltip } from "./machines/tooltip"
 import { Playground } from "./playground"
+import { Rating } from "components/machines/rating"
 import { Pressable } from "components/machines/pressable"
 
 const components = {
@@ -44,6 +45,22 @@ const components = {
       defaultProps={{
         disabled: false,
         readonly: false,
+      }}
+    />
+  ),
+  Rating: () => (
+    <Playground
+      component={Rating}
+      defaultProps={{
+        allowHalf: true,
+        disabled: false,
+        readonly: false,
+        value: 2.5,
+        max: 5,
+        dir: {
+          options: ["ltr", "rtl"],
+          default: "ltr",
+        },
       }}
     />
   ),
