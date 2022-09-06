@@ -16,6 +16,7 @@ import { Tooltip } from "./machines/tooltip"
 import { Playground } from "./playground"
 import { Rating } from "components/machines/rating"
 import { Pressable } from "components/machines/pressable"
+import { NestedMenu } from "components/machines/nested-menu"
 
 const components = {
   Dialog: () => (
@@ -192,6 +193,7 @@ const components = {
     />
   ),
   Menu: () => <Playground component={Menu} />,
+  NestedMenu: () => <Playground component={NestedMenu} />,
   Tooltip: () => (
     <Playground
       component={Tooltip}
