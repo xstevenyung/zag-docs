@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { Icon } from "@chakra-ui/icon"
-import { Box, HStack } from "@chakra-ui/layout"
+import { Box, HStack, Wrap } from "@chakra-ui/layout"
 import { chakra } from "@chakra-ui/system"
 import { normalizeProps, useMachine } from "@zag-js/react"
 import * as tabs from "@zag-js/tabs"
@@ -61,7 +61,7 @@ const components: Record<string, FC<Record<string, any>>> = {
   Resources(props) {
     const comp = allComponents.find((c) => c.package === props.pkg)
     return (
-      <HStack mt="6" spacing="4">
+      <Wrap mt="6" spacingX="4">
         <ResourceLink icon={RiNpmjsFill} href={comp.npmUrl}>
           {comp.version} (latest)
         </ResourceLink>
@@ -71,7 +71,7 @@ const components: Record<string, FC<Record<string, any>>> = {
         <ResourceLink icon={HiOutlineCode} href={comp.sourceUrl}>
           View Source
         </ResourceLink>
-      </HStack>
+      </Wrap>
     )
   },
   blockquote(props) {

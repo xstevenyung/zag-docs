@@ -58,7 +58,7 @@ export const globalStyles: SystemStyleObject = {
     "li:not([role])": {
       marginY: "1",
     },
-    "ol:not([role]), ul:not([role])": {
+    "ol:not([role]), ul:not([role], .chakra-wrap__list)": {
       marginY: "5",
       paddingLeft: "4",
     },
