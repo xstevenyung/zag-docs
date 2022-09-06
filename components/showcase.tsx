@@ -16,6 +16,7 @@ import { Tooltip } from "./machines/tooltip"
 import { Playground } from "./playground"
 import { Rating } from "components/machines/rating"
 import { Pressable } from "components/machines/pressable"
+import { ContextMenu } from "components/machines/context-menu"
 import { NestedMenu } from "components/machines/nested-menu"
 
 const components = {
@@ -193,6 +194,7 @@ const components = {
     />
   ),
   Menu: () => <Playground component={Menu} />,
+  ContextMenu: () => <Playground component={ContextMenu} />,
   NestedMenu: () => <Playground component={NestedMenu} />,
   Tooltip: () => (
     <Playground
