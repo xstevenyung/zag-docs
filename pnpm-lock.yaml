@@ -19,6 +19,7 @@ specifiers:
   '@zag-js/combobox': 0.1.15
   '@zag-js/dialog': 0.1.13
   '@zag-js/editable': 0.1.14
+  '@zag-js/hover-card': ^0.0.0-dev-20220906153341
   '@zag-js/menu': 0.1.14
   '@zag-js/number-input': 0.1.16
   '@zag-js/pin-input': 0.1.14
@@ -76,6 +77,7 @@ dependencies:
   '@zag-js/combobox': 0.1.15
   '@zag-js/dialog': 0.1.13
   '@zag-js/editable': 0.1.14
+  '@zag-js/hover-card': 0.0.0-dev-20220906153341
   '@zag-js/menu': 0.1.14
   '@zag-js/number-input': 0.1.16
   '@zag-js/pin-input': 0.1.14
@@ -1589,6 +1591,15 @@ packages:
 
   /@zag-js/element-size/0.2.1:
     resolution: {integrity: sha512-sSCHv/tgGv1cH2IP/okE8SIPSS0Hk+1BPU4VTzZaSqZ+mmLJ/bqL1p2Z8Osx746JjNJQbzDcpSCG/LeHe9iqhw==}
+    dev: false
+
+  /@zag-js/hover-card/0.0.0-dev-20220906153341:
+    resolution: {integrity: sha512-6Em3mXxnl/uBwEiuN5AwX2wCwkA/K89Xs/qZ/UsIkYCyXijDZxhrNEnWQ+rBNGP/oHawGnYLELkh9XcYf2zaJg==}
+    dependencies:
+      '@zag-js/core': 0.1.10
+      '@zag-js/dismissable': 0.1.4
+      '@zag-js/popper': 0.1.11
+      '@zag-js/types': 0.2.5
     dev: false
 
   /@zag-js/interact-outside/0.1.4:

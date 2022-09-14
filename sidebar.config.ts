@@ -63,6 +63,7 @@ const sidebar: Record<"docs", SidebarItem[]> = {
         { type: "doc", label: "Checkbox", id: "checkbox" },
         { type: "doc", label: "Dialog", id: "dialog" },
         { type: "doc", label: "Editable", id: "editable" },
+        { type: "doc", label: "Hover Card", id: "hover-card" },
         { type: "doc", label: "Menu", id: "menu" },
         { type: "doc", label: "Context Menu", id: "context-menu" },
         { type: "doc", label: "Nested Menu", id: "nested-menu" },

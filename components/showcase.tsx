@@ -18,6 +18,7 @@ import { Rating } from "components/machines/rating"
 import { Pressable } from "components/machines/pressable"
 import { ContextMenu } from "components/machines/context-menu"
 import { NestedMenu } from "components/machines/nested-menu"
+import { HoverCard } from "components/machines/hover-card"
 
 const components = {
   Dialog: () => (
@@ -47,6 +48,15 @@ const components = {
       defaultProps={{
         disabled: false,
         readonly: false,
+      }}
+    />
+  ),
+  HoverCard: () => (
+    <Playground
+      component={HoverCard}
+      defaultProps={{
+        openDelay: 700,
+        closeDelay: 300,
       }}
     />
   ),

@@ -32,6 +32,7 @@
     "@zag-js/combobox": "0.1.15",
     "@zag-js/dialog": "0.1.13",
     "@zag-js/editable": "0.1.14",
+    "@zag-js/hover-card": "^0.0.0-dev-20220906153341",
     "@zag-js/menu": "0.1.14",
     "@zag-js/number-input": "0.1.16",
     "@zag-js/pin-input": "0.1.14",
