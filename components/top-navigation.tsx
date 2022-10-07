@@ -1,5 +1,6 @@
 import { Badge, Box, Flex, HStack } from "@chakra-ui/layout"
 import { GithubIcon } from "components/icons"
+import { ThemeToggle } from "components/theme-toggle"
 import { FaDiscord } from "react-icons/fa"
 import siteConfig from "site.config"
 import { IconLink } from "./icon-link"
@@ -68,6 +69,7 @@ export function TopNavigation() {
               icon={FaDiscord}
               label="Join the Discord server"
             />
+            <ThemeToggle />
             <MobileNavigation />
           </HStack>
         </HStack>
