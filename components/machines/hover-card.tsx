@@ -30,7 +30,6 @@ export function HoverCard(props: HoverCardProps) {
         <chakra.img
           alt="Twitter"
           src="/favicon/apple-touch-icon.png"
-          rounded="full"
           boxSize="12"
           shadow="xl"
         />
@@ -48,7 +47,6 @@ export function HoverCard(props: HoverCardProps) {
               position="relative"
               maxW="min(calc(100vw - 16px), 360px)"
               width="full"
-              rounded="md"
               {...api.contentProps}
             >
               <chakra.div
@@ -61,7 +59,6 @@ export function HoverCard(props: HoverCardProps) {
                 <chakra.img
                   alt="Twitter"
                   src="/favicon/apple-touch-icon.png"
-                  rounded="full"
                   boxSize="14"
                 />
                 <Stack spacing="4">

@@ -42,7 +42,6 @@ export function Pressable(props: PressableProps) {
         {...api.pressableProps}
         px="4"
         py="3"
-        rounded="md"
         color="white"
         w="28"
         bg="gray.600"

@@ -29,26 +29,6 @@ function Toast({ actor }: { actor: toast.Service }) {
       }}
       {...api.rootProps}
     >
-      <chakra.div
-        bg="whiteAlpha.500"
-        sx={{
-          position: "absolute",
-          width: "full",
-          bottom: "0",
-          insetX: "0",
-          height: "4px",
-        }}
-      >
-        <chakra.div
-          key={state.value}
-          sx={{
-            height: "inherit",
-            bg: "white",
-            animationName: state.matches("active") ? "shrink" : "none",
-          }}
-          {...api.progressbarProps}
-        />
-      </chakra.div>
       <p {...api.titleProps}>
         [{api.type}] {api.title}
       </p>

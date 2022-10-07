@@ -19,6 +19,7 @@ import { Pressable } from "components/machines/pressable"
 import { ContextMenu } from "components/machines/context-menu"
 import { NestedMenu } from "components/machines/nested-menu"
 import { HoverCard } from "components/machines/hover-card"
+import { Pagination } from "components/machines/pagination"
 
 const components = {
   Dialog: () => (
@@ -57,6 +58,15 @@ const components = {
       defaultProps={{
         openDelay: 700,
         closeDelay: 300,
+      }}
+    />
+  ),
+  Pagination: () => (
+    <Playground
+      component={Pagination}
+      defaultProps={{
+        pageSize: 10,
+        siblingCount: 1,
       }}
     />
   ),
