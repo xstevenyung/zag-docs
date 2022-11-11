@@ -6,10 +6,10 @@ import { data } from "./data"
 
 function Pagination() {
   const [state, send] = useMachine(
-    accordion.machine({ id: createUniqueId(), count: data.length }),
+    pagination.machine({ id: createUniqueId(), count: data.length }),
   )
 
-  const api = createMemo(() => accordion.connect(state, send, normalizeProps))
+  const api = createMemo(() => pagination.connect(state, send, normalizeProps))
 
   return (
     <div>
