@@ -28,7 +28,7 @@ export default defineComponent({
     )
 
     const shareMenuApi = computed(() =>
-      menu.connect(subState.value, subSend, normalizeProps),
+      menu.connect(shareMenuState.value, shareMenuSend, normalizeProps),
     )
 
     onMounted(() => {
@@ -38,8 +38,9 @@ export default defineComponent({
       })
     })
 
+    // Share menu trigger
     const shareMenuTriggerProps = computed(() =>
-      shareMenuApi.value.getTriggerItemProps(shareMenuApi),
+      fileMenu.value.getTriggerItemProps(shareMenuApi.value)
     )
 
     return () => {

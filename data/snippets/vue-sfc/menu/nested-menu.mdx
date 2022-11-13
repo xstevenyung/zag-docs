@@ -18,8 +18,8 @@ const [shareMenuState, shareMenuSend, shareMenuMachine] = useMachine(
   menu.machine({ id:"2", "aria-label": "Share" })
 );
 
-const shareMenu = computed(() =>
-  menu.connect(subState.value, subSend, normalizeProps)
+const shareMenu = computed(() => 
+  menu.connect(shareMenuState.value, shareMenuSend, normalizeProps)
 );
 
 onMounted(() => {
@@ -28,6 +28,12 @@ onMounted(() => {
     shareMenu.value.setParent(fileMenuMachine);
   });
 });
+
+// Share menu trigger
+const shareMenuTriggerProps = computed(() => 
+  fileMenu.value.getTriggerItemProps(shareMenu.value)
+);
+
 </script>
 
 <template>
