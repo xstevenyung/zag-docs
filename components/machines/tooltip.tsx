@@ -1,8 +1,7 @@
-import { normalizeProps, useMachine } from "@zag-js/react"
+import { normalizeProps, useMachine, Portal } from "@zag-js/react"
 import * as tooltip from "@zag-js/tooltip"
 import { chakra } from "@chakra-ui/system"
 import { Button } from "components/button"
-import Portal from "@reach/portal"
 import { useId } from "react"
 
 export function Tooltip(props) {

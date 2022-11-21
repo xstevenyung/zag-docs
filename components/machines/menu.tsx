@@ -1,7 +1,6 @@
 import * as menu from "@zag-js/menu"
-import { normalizeProps, useMachine } from "@zag-js/react"
+import { normalizeProps, useMachine, Portal } from "@zag-js/react"
 import { chakra } from "@chakra-ui/system"
-import Portal from "@reach/portal"
 import { Button } from "components/button"
 import { useId } from "react"
 
