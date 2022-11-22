@@ -11,7 +11,6 @@ const [state, send] = useMachine(
     values: [10, 60],
   })
 );
-;
 const api = computed(() =>
   rangeSlider.connect(state.value, send, normalizeProps)
 );

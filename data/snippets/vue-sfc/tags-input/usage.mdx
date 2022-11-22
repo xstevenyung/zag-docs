@@ -10,7 +10,6 @@ const [state, send] = useMachine(
     value: ["React", "Vue"],
   })
 );
-;
 const api = computed(() =>
   tagsInput.connect(state.value, send, normalizeProps)
 );
