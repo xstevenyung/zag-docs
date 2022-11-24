@@ -24,7 +24,9 @@ const Button: ComponentStyleConfig = {
       bg: "gray.50",
       borderWidth: "1px",
       _hover: {
-        bg: "gray.100",
+        "&:enabled": {
+          bg: "gray.100",
+        },
       },
     },
     black: {

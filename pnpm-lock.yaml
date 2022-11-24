@@ -29,6 +29,7 @@ specifiers:
   '@zag-js/range-slider': 0.2.2
   '@zag-js/rating': 0.2.2
   '@zag-js/react': 0.3.0
+  '@zag-js/select': ^0.1.0
   '@zag-js/slider': 0.2.2
   '@zag-js/splitter': 0.2.2
   '@zag-js/tabs': 0.2.2
@@ -87,6 +88,7 @@ dependencies:
   '@zag-js/range-slider': 0.2.2
   '@zag-js/rating': 0.2.2
   '@zag-js/react': 0.3.0_biqbaboplfbrettd7655fr4n2y
+  '@zag-js/select': 0.1.0
   '@zag-js/slider': 0.2.2
   '@zag-js/splitter': 0.2.2
   '@zag-js/tabs': 0.2.2
@@ -1679,6 +1681,15 @@ packages:
 
   /@zag-js/remove-scroll/0.2.0:
     resolution: {integrity: sha512-mxtPQnPABgAka6zVSvvauS00dgfO6+2n2c8sftdnpCnpTRq6mdCPxj4/NE169Wk5ldzxBbqmnjgYWjOlWV8lpw==}
+    dev: false
+
+  /@zag-js/select/0.1.0:
+    resolution: {integrity: sha512-fkyz0cQc3BQVeSamz7MGMbALRUXiJH4aOiYSVXjLVBbqzM0bxg9ySBAjOuVKluhQ/eavJElLVxrB3NWVBE2yFQ==}
+    dependencies:
+      '@zag-js/core': 0.2.2
+      '@zag-js/interact-outside': 0.2.0
+      '@zag-js/popper': 0.2.0
+      '@zag-js/types': 0.3.1
     dev: false
 
   /@zag-js/slider/0.2.2:

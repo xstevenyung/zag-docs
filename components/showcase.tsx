@@ -20,6 +20,7 @@ import { ContextMenu } from "components/machines/context-menu"
 import { NestedMenu } from "components/machines/nested-menu"
 import { HoverCard } from "components/machines/hover-card"
 import { Pagination } from "components/machines/pagination"
+import { Select } from "./machines/select"
 
 const components = {
   Dialog: () => (
@@ -235,9 +236,20 @@ const components = {
       }}
     />
   ),
+  Select: () => (
+    <Playground
+      component={Select}
+      defaultProps={{
+        loop: false,
+        selectOnTab: false,
+        disabled: false,
+        readonly: false,
+      }}
+    />
+  ),
 }
 
 export function Showcase(props: { id: keyof typeof components }) {
-  const Component = components[props.id]
+  const Component = components[props.id] ?? "span"
   return <Component />
 }
