@@ -40,7 +40,7 @@ const components = {
       defaultProps={{
         indeterminate: false,
         disabled: false,
-        readonly: false,
+        readOnly: false,
       }}
     />
   ),
@@ -49,7 +49,7 @@ const components = {
       component={Radio}
       defaultProps={{
         disabled: false,
-        readonly: false,
+        readOnly: false,
       }}
     />
   ),
@@ -77,7 +77,7 @@ const components = {
       defaultProps={{
         allowHalf: true,
         disabled: false,
-        readonly: false,
+        readOnly: false,
         value: 2.5,
         max: 5,
         dir: {
@@ -187,7 +187,7 @@ const components = {
       component={Slider}
       defaultProps={{
         disabled: false,
-        readonly: false,
+        readOnly: false,
         origin: { default: "start", options: ["start", "center"] },
         dir: { default: "ltr", options: ["ltr", "rtl"] },
       }}
@@ -198,7 +198,7 @@ const components = {
       component={RangeSlider}
       defaultProps={{
         disabled: false,
-        readonly: false,
+        readOnly: false,
         dir: { default: "ltr", options: ["ltr", "rtl"] },
       }}
     />
@@ -243,7 +243,7 @@ const components = {
         loop: false,
         selectOnTab: false,
         disabled: false,
-        readonly: false,
+        readOnly: false,
       }}
     />
   ),
