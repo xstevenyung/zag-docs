@@ -125,6 +125,22 @@ keyboard, and it will be skipped on keyboard navigation.
 //...
 ```
 
+## Close on select
+
+This behaviour ensures that the menu is closed when an option is selected and is
+`true` by default. It's only concerned with when an option is selected with
+pointer, space key or enter key. To disable the behaviour, set the
+`closeOnSelect` property in the machine's context to `false`.
+
+```jsx {4}
+const [state, send] = useMachine(
+  select.machine({
+    id: useId(),
+    closeOnSelect: false,
+  }),
+)
+```
+
 ## Looping the keyboard navigation
 
 When navigating with the select using the arrow down and up keys, the select
