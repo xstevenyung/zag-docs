@@ -1,7 +1,7 @@
 ```jsx
 import * as hoverCard from "@zag-js/hover-card"
 import { normalizeProps, useMachine } from "@zag-js/solid"
-import { createMemo, createUniqueId } from "solid-js"
+import { createMemo, createUniqueId, Show } from "solid-js"
 import { Portal } from "solid-js/web"
 
 function Checkbox() {
@@ -19,7 +19,7 @@ function Checkbox() {
         Twitter
       </a>
 
-      {api().isOpen && (
+      <Show when={api().isOpen}>
         <Portal>
           <div {...api().positionerProps}>
             <div {...api().contentProps}>
@@ -30,7 +30,7 @@ function Checkbox() {
             </div>
           </div>
         </Portal>
-      )}
+      </Show>
     </>
   )
 }

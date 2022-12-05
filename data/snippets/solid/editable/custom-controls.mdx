@@ -1,7 +1,7 @@
 ```jsx
 import * as editable from "@zag-js/editable"
 import { normalizeProps, useMachine } from "@zag-js/solid"
-import { createMemo, createUniqueId } from "solid-js"
+import { createMemo, createUniqueId, Show } from "solid-js"
 
 export default function Editable() {
   const [state, send] = useMachine(editable.machine({ id: createUniqueId() }))
@@ -15,13 +15,15 @@ export default function Editable() {
         <span {...api().previewProps} />
       </div>
       <div>
-        {!api().isEditing && <button {...api().editButtonProps}>Edit</button>}
-        {api().isEditing && (
+        <Show when={!api().isEditing}>
+          <button {...api().editButtonProps}>Edit</button>{" "}
+        </Show>
+        <Show when={api().isEditing}>
           <div>
             <button {...api().submitButtonProps}>Save</button>
             <button {...api().cancelButtonProps}>Cancel</button>
           </div>
-        )}
+        </Show>
       </div>
     </div>
   )

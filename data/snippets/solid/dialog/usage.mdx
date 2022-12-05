@@ -2,19 +2,17 @@
 import * as dialog from "@zag-js/dialog"
 import { Portal } from "solid-js/web"
 import { useMachine, normalizeProps } from "@zag-js/solid"
-import { createMemo, createUniqueId } from "solid-js"
+import { createMemo, createUniqueId, Show } from "solid-js"
 
 export default function Page() {
   const [state, send] = useMachine(dialog.machine({ id: createUniqueId() }))
-  
+
   const api = createMemo(() => dialog.connect(state, send, normalizeProps))
 
   return (
     <>
-      <button {...api().triggerProps}>
-        Open Dialog
-      </button>
-      {api().isOpen && (
+      <button {...api().triggerProps}>Open Dialog</button>
+      <Show when={api().isOpen}>
         <Portal>
           <div {...api().backdropProps} />
           <div {...api().underlayProps}>
@@ -29,7 +27,7 @@ export default function Page() {
             </div>
           </div>
         </Portal>
-      )}
+      </Show>
     </>
   )
 }

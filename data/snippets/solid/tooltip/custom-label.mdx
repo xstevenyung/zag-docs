@@ -1,7 +1,7 @@
 ```jsx {9,22-27}
 import { useMachine } from "@zag-js/solid"
 import * as tooltip from "@zag-js/tooltip"
-import { createUniqueId } from "solid-js"
+import { createUniqueId, Show } from "solid-js"
 
 export function Tooltip() {
   const [state, send] = useMachine(
@@ -16,7 +16,7 @@ export function Tooltip() {
   return (
     <>
       <button {...api().triggerProps}>Hover me</button>
-      {api().isOpen && (
+      <Show when={api().isOpen}>
         <div {...api().positionerProps}>
           <div {...api().contentProps}>
             {/* rendered */}
@@ -25,7 +25,7 @@ export function Tooltip() {
             <div {...api().labelProps} />
           </div>
         </div>
-      )}
+      </Show>
     </>
   )
 }
