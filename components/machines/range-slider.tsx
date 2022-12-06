@@ -9,7 +9,7 @@ export function RangeSlider(props: any) {
     slider.machine({
       id: useId(),
       name: "quantity",
-      values: [10, 60],
+      value: [10, 60],
     }),
     { context: props.controls },
   )
@@ -23,7 +23,7 @@ export function RangeSlider(props: any) {
           Quantity
         </chakra.label>
         <output {...api.outputProps}>
-          <b>{api.values.join(" - ")}</b>
+          <b>{api.value.join(" - ")}</b>
         </output>
       </Flex>
 
@@ -49,7 +49,7 @@ export function RangeSlider(props: any) {
             {...api.rangeProps}
           />
         </chakra.div>
-        {api.values.map((_, index) => (
+        {api.value.map((_, index) => (
           <Center
             className="focus-outline"
             boxSize="20px"

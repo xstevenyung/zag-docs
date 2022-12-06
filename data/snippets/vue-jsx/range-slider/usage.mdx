@@ -10,7 +10,7 @@ export default defineComponent({
       rangeSlider.machine({
         id: "1",
         name: ["min", "max"],
-        values: [10, 60],
+        value: [10, 60],
       }),
     )
 
@@ -25,7 +25,7 @@ export default defineComponent({
           <div {...api.trackProps}>
             <div {...api.rangeProps} />
           </div>
-          {api.values.map((_, index) => (
+          {api.value.map((_, index) => (
             <div key={index} {...api.getThumbProps(index)}>
               <input {...api.getInputProps(index)} />
             </div>

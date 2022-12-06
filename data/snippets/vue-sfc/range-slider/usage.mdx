@@ -8,7 +8,7 @@ const [state, send] = useMachine(
   rangeSlider.machine({
     id: "1",
     name: ["min", "max"],
-    values: [10, 60],
+    value: [10, 60],
   })
 );
 const api = computed(() =>
@@ -22,7 +22,7 @@ const api = computed(() =>
       <div v-bind="api.rangeProps" />
     </div>
     <div
-      v-for="(_, index) in api.values"
+      v-for="(_, index) in api.value"
       :key="index"
       v-bind="api.getThumbProps(index)"
     >
