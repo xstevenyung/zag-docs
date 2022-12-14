@@ -1,5 +1,5 @@
 ```jsx
-import * as rating from "@zag-js/rating"
+import * as rating from "@zag-js/rating-group"
 import { useMachine, normalizeProps } from "@zag-js/solid"
 import { createMemo, createUniqueId } from "solid-js"
 import { HalfStar, Star } from "./icons"
@@ -12,17 +12,17 @@ function Rating() {
   return (
     <div {...api().rootProps}>
       <label {...api().labelProps}>Rate:</label>
-      <div {...api().itemGroupProps}>
+      <div {...api().controlProps}>
         {api().sizeArray.map((index) => {
           const state = api().getRatingState(index)
           return (
-            <span key={index} {...api().getItemProps({ index })}>
+            <span key={index} {...api().getRatingProps({ index })}>
               {state.isHalf ? <HalfStar /> : <Star />}
             </span>
           )
         })}
       </div>
-      <input {...api().inputProps} />
+      <input {...api().hiddenInputProps} />
     </div>
   )
 }

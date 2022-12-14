@@ -26,7 +26,7 @@ const api = computed(() =>
       :key="index"
       v-bind="api.getThumbProps(index)"
     >
-      <input v-bind="api.getInputProps(index)" />
+      <input v-bind="api.getHiddenInputProps(index)" />
     </div>
   </div>
 </template>

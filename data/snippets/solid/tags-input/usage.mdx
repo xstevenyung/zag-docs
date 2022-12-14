@@ -21,7 +21,7 @@ export function TagsInput() {
             <div {...api().getTagProps({ index: index(), value })}>
               <span>{value} </span>
               <button
-                {...api().getTagDeleteButtonProps({ index: index(), value })}
+                {...api().getTagDeleteTriggerProps({ index: index(), value })}
               >
                 &#x2715;
               </button>

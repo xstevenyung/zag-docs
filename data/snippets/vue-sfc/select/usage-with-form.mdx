@@ -48,7 +48,7 @@ const api = computed(() =>
 
     <Teleport to="body">
       <div v-bind="api.positionerProps">
-        <ul v-bind="api.menuProps">
+        <ul v-bind="api.contentProps">
           <li
             v-for="{label, value} in selectData"
             :key="value"

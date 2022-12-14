@@ -49,7 +49,7 @@ export function MobileNavigation() {
 
       {api.isOpen && (
         <Portal>
-          <div {...api.underlayProps}>
+          <div {...api.containerProps}>
             <Box
               {...api.contentProps}
               position="fixed"
@@ -69,7 +69,7 @@ export function MobileNavigation() {
                   ref={initialRef}
                   size="sm"
                   px="2"
-                  {...api.closeButtonProps}
+                  {...api.closeTriggerProps}
                 >
                   <HStack>
                     <HiX /> <span>Close</span>

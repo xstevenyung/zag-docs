@@ -29,21 +29,21 @@ export function Editable(props: any) {
             size="sm"
             variant="outline"
             bg="white"
-            {...api.editButtonProps}
+            {...api.editTriggerProps}
           >
             Edit
           </Button>
         )}
         {api.isEditing && (
           <HStack>
-            <Button size="sm" variant="green" {...api.submitButtonProps}>
+            <Button size="sm" variant="green" {...api.submitTriggerProps}>
               Save
             </Button>
             <Button
               size="sm"
               variant="outline"
               bg="white"
-              {...api.cancelButtonProps}
+              {...api.cancelTriggerProps}
             >
               Cancel
             </Button>

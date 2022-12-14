@@ -72,7 +72,7 @@ export function Select(props) {
             listStyleType="none"
             shadow="base"
             className="focus-outline"
-            {...api.menuProps}
+            {...api.contentProps}
           >
             {data.map(({ label, value }) => (
               <chakra.li

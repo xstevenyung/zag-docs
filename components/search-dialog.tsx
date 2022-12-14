@@ -32,7 +32,7 @@ export function Search() {
             position="fixed"
             zIndex="modal"
             inset="0"
-            {...dialog_api.underlayProps}
+            {...dialog_api.containerProps}
           >
             <Box
               mt="90px"

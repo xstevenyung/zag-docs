@@ -54,7 +54,7 @@ export function Slider(props: any) {
           _disabled={{ bg: "gray.200" }}
           {...api.thumbProps}
         >
-          <input {...api.inputProps} />
+          <input {...api.hiddenInputProps} />
         </Center>
       </Flex>
     </chakra.div>

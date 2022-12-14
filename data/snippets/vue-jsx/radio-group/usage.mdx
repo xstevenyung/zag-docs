@@ -1,5 +1,5 @@
 ```tsx
-import * as radio from "@zag-js/radio"
+import * as radio from "@zag-js/radio-group"
 import { normalizeProps, useMachine } from "@zag-js/vue"
 import { defineComponent, h, Fragment, computed } from "vue"
 
@@ -24,12 +24,12 @@ export default defineComponent({
         <div {...api.rootProps}>
           <h3 {...api.labelProps}>Fruits</h3>
           {items.map((opt) => (
-            <label {...api.getItemProps({ value: opt.id })}>
-              <span {...api.getItemLabelProps({ value: opt.id })}>
+            <label {...api.getRadioProps({ value: opt.id })}>
+              <span {...api.getRadioLabelProps({ value: opt.id })}>
                 {opt.label}
               </span>
-              <input {...api.getItemInputProps({ value: opt.id })} />
-              <div {...api.getItemControlProps({ value: opt.id })} />
+              <input {...api.getRadioInputProps({ value: opt.id })} />
+              <div {...api.getRadioControlProps({ value: opt.id })} />
             </label>
           ))}
         </div>

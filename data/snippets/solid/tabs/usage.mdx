@@ -16,7 +16,7 @@ export function Tabs() {
 
   return (
     <div {...api().rootProps}>
-      <div {...api().triggerGroupProps}>
+      <div {...api().tablistProps}>
         <For each={data}>
           {(item) => (
             <button {...api().getTriggerProps({ value: item.value })}>

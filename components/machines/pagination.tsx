@@ -36,7 +36,7 @@ export function Pagination(props: PaginationProps) {
             listStyleType="none"
           >
             <li>
-              <PaginationLink href="#previous" {...api.prevItemProps}>
+              <PaginationLink href="#previous" {...api.prevPageTriggerProps}>
                 &lt; <chakra.span srOnly>Previous Page</chakra.span>
               </PaginationLink>
             </li>
@@ -46,7 +46,7 @@ export function Pagination(props: PaginationProps) {
                   <li key={page.value}>
                     <PaginationLink
                       href={`#${page.value}`}
-                      {...api.getItemProps(page)}
+                      {...api.getPageTriggerProps(page)}
                     >
                       {page.value}
                     </PaginationLink>
@@ -65,7 +65,7 @@ export function Pagination(props: PaginationProps) {
                 )
             })}
             <li>
-              <PaginationLink href="#next" {...api.nextItemProps}>
+              <PaginationLink href="#next" {...api.nextPageTriggerProps}>
                 &gt; <chakra.span srOnly>Next Page</chakra.span>
               </PaginationLink>
             </li>

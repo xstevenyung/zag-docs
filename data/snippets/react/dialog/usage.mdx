@@ -13,7 +13,7 @@ export function Dialog() {
       {api.isOpen && (
         <Portal>
           <div {...api.backdropProps} />
-          <div {...api.underlayProps}>
+          <div {...api.containerProps}>
             <div {...api.contentProps}>
               <h2 {...api.titleProps}>Edit profile</h2>
               <p {...api.descriptionProps}>
@@ -23,7 +23,7 @@ export function Dialog() {
                 <input placeholder="Enter name..." />
                 <button>Save</button>
               </div>
-              <button {...api.closeButtonProps}>Close</button>
+              <button {...api.closeTriggerProps}>Close</button>
             </div>
           </div>
         </Portal>

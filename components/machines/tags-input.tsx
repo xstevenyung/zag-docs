@@ -41,7 +41,7 @@ export function TagsInput(props: any) {
                   {...api.getTagProps(opt)}
                 >
                   <span>{value}</span>
-                  <chakra.button ml="1" {...api.getTagDeleteButtonProps(opt)}>
+                  <chakra.button ml="1" {...api.getTagDeleteTriggerProps(opt)}>
                     &#x2715;
                   </chakra.button>
                 </chakra.div>

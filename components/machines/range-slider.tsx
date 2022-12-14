@@ -60,7 +60,7 @@ export function RangeSlider(props: any) {
             key={index}
             {...api.getThumbProps(index)}
           >
-            <input {...api.getInputProps(index)} />
+            <input {...api.getHiddenInputProps(index)} />
           </Center>
         ))}
       </Flex>

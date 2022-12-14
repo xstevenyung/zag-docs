@@ -19,7 +19,7 @@ const api = computed(() => slider.connect(state.value, send, normalizeProps));
         <div v-bind="api.rangeProps" />
       </div>
       <div v-bind="api.thumbProps">
-        <input v-bind="api.inputProps" />
+        <input v-bind="api.hiddenInputProps" />
       </div>
     </div>
   </div>

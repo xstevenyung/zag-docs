@@ -38,7 +38,7 @@ export function NumberInput(props: any) {
             display="flex"
             justifyContent="center"
             _disabled={{ opacity: 0.5 }}
-            {...api.incrementButtonProps}
+            {...api.incrementTriggerProps}
           >
             <BiChevronUp />
           </chakra.button>
@@ -49,7 +49,7 @@ export function NumberInput(props: any) {
             display="flex"
             justifyContent="center"
             _disabled={{ opacity: 0.5 }}
-            {...api.decrementButtonProps}
+            {...api.decrementTriggerProps}
           >
             <BiChevronDown />
           </chakra.button>

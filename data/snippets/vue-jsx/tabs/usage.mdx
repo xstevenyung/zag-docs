@@ -22,7 +22,7 @@ export default defineComponent({
       const api = apiRef.value
       return (
         <div {...api.rootProps}>
-          <div {...api.triggerGroupProps}>
+          <div {...api.tablistProps}>
             {data.map((item) => (
               <button
                 {...api.getTriggerProps({ value: item.value })}

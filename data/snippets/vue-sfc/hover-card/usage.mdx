@@ -21,7 +21,7 @@ const api = computed(() => hoverCard.connect(state.value, send, normalizeProps))
     <div v-bind="api.positionerProps">
       <div v-bind="api.contentProps">
         <div v-bind="api.arrowProps">
-          <div v-bind="api.innerArrowProps" />
+          <div v-bind="api.arrowTipProps" />
         </div>
         Twitter Preview
       </div>

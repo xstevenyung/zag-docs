@@ -22,14 +22,14 @@ export default defineComponent({
           {api.isOpen && (
             <Teleport to="body">
               <div {...api.backdropProps} />
-              <div {...api.underlayProps}>
+              <div {...api.containerProps}>
                 <div {...api.contentProps}>
                   <h2 {...api.titleProps}>Edit profile</h2>
                   <p {...api.descriptionProps}>
                     Make changes to your profile here. Click save when you are
                     done.
                   </p>
-                  <button {...api.closeButtonProps}>X</button>
+                  <button {...api.closeTriggerProps}>X</button>
                   <input placeholder="Enter name..." />
                   <button>Save Changes</button>
                 </div>

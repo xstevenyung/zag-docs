@@ -33,7 +33,7 @@ export function Dialog(props: { controls: any }) {
             position="fixed"
             zIndex="modal"
             inset="0"
-            {...api.underlayProps}
+            {...api.containerProps}
           >
             <chakra.div
               width="full"
@@ -75,7 +75,7 @@ export function Dialog(props: { controls: any }) {
                 position="absolute"
                 top="3"
                 right="3"
-                {...api.closeButtonProps}
+                {...api.closeTriggerProps}
               >
                 <Icon as={HiX} />
               </chakra.button>

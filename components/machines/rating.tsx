@@ -1,6 +1,6 @@
 import { Flex, Stack } from "@chakra-ui/layout"
 import { chakra } from "@chakra-ui/system"
-import * as rating from "@zag-js/rating"
+import * as rating from "@zag-js/rating-group"
 import { normalizeProps, useMachine } from "@zag-js/react"
 import { useId } from "react"
 
@@ -39,7 +39,6 @@ type RadioProps = {
     allowHalf: boolean
     disabled: boolean
     readonly: boolean
-    value: number
     max: number
   }
 }
@@ -49,6 +48,7 @@ export function Rating(props: RadioProps) {
     rating.machine({
       id: useId(),
       name: "service",
+      value: 2.5,
     }),
     {
       context: props.controls,
@@ -68,13 +68,13 @@ export function Rating(props: RadioProps) {
         }}
       >
         <label {...api.labelProps}>Rate Us:</label>
-        <chakra.div {...api.itemGroupProps} display="inline-flex">
+        <chakra.div {...api.controlProps} display="inline-flex">
           {api.sizeArray.map((index) => {
             const state = api.getRatingState(index)
             return (
               <chakra.span
                 key={index}
-                {...api.getItemProps({ index })}
+                {...api.getRatingProps({ index })}
                 boxSize="8"
                 p="1"
                 sx={{
@@ -98,7 +98,7 @@ export function Rating(props: RadioProps) {
             )
           })}
         </chakra.div>
-        <input {...api.inputProps} />
+        <input {...api.hiddenInputProps} />
       </Stack>
     </div>
   )

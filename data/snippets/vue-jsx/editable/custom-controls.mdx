@@ -22,11 +22,11 @@ export default defineComponent({
             <span {...api.previewProps} />
           </div>
           <div>
-            {!api.isEditing && <button {...api.editButtonProps}>Edit</button>}
+            {!api.isEditing && <button {...api.editTriggerProps}>Edit</button>}
             {api.isEditing && (
               <div>
-                <button {...api.submitButtonProps}>Save</button>
-                <button {...api.cancelButtonProps}>Cancel</button>
+                <button {...api.submitTriggerProps}>Save</button>
+                <button {...api.cancelTriggerProps}>Cancel</button>
               </div>
             )}
           </div>

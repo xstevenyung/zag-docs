@@ -30,9 +30,12 @@ type AccordionProps = {
 }
 
 export function Accordion(props: AccordionProps) {
-  const [state, send] = useMachine(accordion.machine({ id: useId() }), {
-    context: props.controls,
-  })
+  const [state, send] = useMachine(
+    accordion.machine({ id: useId(), value: "Aircrafts" }),
+    {
+      context: props.controls,
+    },
+  )
 
   const api = accordion.connect(state, send, normalizeProps)
 

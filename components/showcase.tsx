@@ -78,7 +78,6 @@ const components = {
         allowHalf: true,
         disabled: false,
         readOnly: false,
-        value: 2.5,
         max: 5,
         dir: {
           options: ["ltr", "rtl"],
@@ -93,10 +92,6 @@ const components = {
       defaultProps={{
         collapsible: true,
         multiple: false,
-        value: {
-          default: "Aircrafts",
-          options: ["Aircrafts", "Automobiles", "Watercraft"],
-        },
       }}
     />
   ),

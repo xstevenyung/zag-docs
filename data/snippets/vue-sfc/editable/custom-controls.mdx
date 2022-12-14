@@ -17,10 +17,10 @@ const api = computed(() => editable.connect(state.value, send, normalizeProps));
     </div>
     <div>
       <div v-if="api.isEditing">
-        <button v-bind="api.submitButtonProps">Save</button>
-        <button v-bind="api.cancelButtonProps">Cancel</button>
+        <button v-bind="api.submitTriggerProps">Save</button>
+        <button v-bind="api.cancelTriggerProps">Cancel</button>
       </div>
-      <button v-else v-bind="api.editButtonProps">Edit</button>
+      <button v-else v-bind="api.editTriggerProps">Edit</button>
     </div>
   </div>
 </template>

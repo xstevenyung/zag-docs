@@ -14,9 +14,9 @@ const api = computed(() =>
   <div ref="ref" v-bind="api.rootProps">
     <label v-bind="api.labelProps">Enter number</label>
     <div>
-      <button v-bind="api.decrementButtonProps">DEC</button>
+      <button v-bind="api.decrementTriggerProps">DEC</button>
       <input v-bind="api.inputProps" />
-      <button v-bind="api.incrementButtonProps">INC</button>
+      <button v-bind="api.incrementTriggerProps">INC</button>
     </div>
   </div>
 </template>

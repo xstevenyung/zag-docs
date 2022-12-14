@@ -20,7 +20,7 @@ const api = computed(() =>
     <span v-for="(value, index) in api.value" :key="index">
       <div v-bind="api.getTagProps({ index, value })">
         <span>{value} </span>
-        <button v-bind="api.getTagDeleteButtonProps({ index, value })">
+        <button v-bind="api.getTagDeleteTriggerProps({ index, value })">
           &#x2715;
         </button>
       </div>

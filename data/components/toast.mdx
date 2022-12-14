@@ -462,20 +462,3 @@ the toast.
   animation-name: fadeout;
 }
 ```
-
-### Progress bar
-
-When a progress bar is rendered and the `api.progressbarProps` from the
-`toast.connect` is used, we attach some styles the progress bar for ease of
-customization.
-
-To add animation to the progressbar, you only need to specify the
-`animation-name`. We attach the other animation properties to the progress bar.
-
-```css
-[data-part="progressbar"] {
-  height: 4px;
-  background: rgb(116, 116, 116);
-  animation-name: shrink;
-}
-```

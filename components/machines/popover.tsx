@@ -39,7 +39,7 @@ export function Popover(props: any) {
               sx={{ "--arrow-background": "white", "--arrow-size": "8px" }}
               {...api.arrowProps}
             >
-              <chakra.div rounded="sm" {...api.innerArrowProps} />
+              <chakra.div rounded="sm" {...api.arrowTipProps} />
             </chakra.div>
 
             <Stack>
@@ -65,7 +65,7 @@ export function Popover(props: any) {
               top="3"
               right="3"
               padding="2"
-              {...api.closeButtonProps}
+              {...api.closeTriggerProps}
             >
               <HiX />
             </chakra.button>

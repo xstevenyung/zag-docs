@@ -52,7 +52,7 @@ export function HoverCard(props: HoverCardProps) {
                 sx={{ "--arrow-background": "white", "--arrow-size": "8px" }}
                 {...api.arrowProps}
               >
-                <chakra.div rounded="sm" {...api.innerArrowProps} />
+                <chakra.div rounded="sm" {...api.arrowTipProps} />
               </chakra.div>
               <Stack spacing="3">
                 <chakra.img

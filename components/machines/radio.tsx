@@ -1,6 +1,6 @@
 import { Flex, Stack } from "@chakra-ui/layout"
 import { chakra } from "@chakra-ui/system"
-import * as radio from "@zag-js/radio"
+import * as radio from "@zag-js/radio-group"
 import { normalizeProps, useMachine } from "@zag-js/react"
 import { useId } from "react"
 
@@ -47,15 +47,15 @@ export function Radio(props: RadioProps) {
                 cursor: "default",
               }}
               key={opt.id}
-              {...api.getItemProps({ value: opt.id })}
+              {...api.getRadioProps({ value: opt.id })}
             >
               <chakra.span
                 order="2"
-                {...api.getItemLabelProps({ value: opt.id })}
+                {...api.getRadioLabelProps({ value: opt.id })}
               >
                 {opt.label}
               </chakra.span>
-              <input data-peer {...api.getItemInputProps({ value: opt.id })} />
+              <input data-peer {...api.getRadioInputProps({ value: opt.id })} />
               <chakra.div
                 order="1"
                 data-testid={`control-${opt.id}`}
@@ -81,7 +81,7 @@ export function Radio(props: RadioProps) {
                 _peerFocusVisible={{
                   outline: "2px solid royalblue",
                 }}
-                {...api.getItemControlProps({ value: opt.id })}
+                {...api.getRadioControlProps({ value: opt.id })}
               >
                 {api.value === opt.id && (
                   <chakra.svg
