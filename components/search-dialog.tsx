@@ -80,7 +80,7 @@ export function Search() {
                   maxHeight="340px"
                   overflowY="auto"
                   px="1"
-                  {...combobox_api.listboxProps}
+                  {...combobox_api.contentProps}
                 >
                   {results.map((item) => {
                     const isLvl1 = item.type === "lvl1"

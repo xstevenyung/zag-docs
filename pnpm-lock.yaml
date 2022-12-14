@@ -15,7 +15,7 @@ specifiers:
   '@types/react': ^18.0.15
   '@zag-js/accordion': 0.2.4
   '@zag-js/checkbox': 0.2.5
-  '@zag-js/combobox': 0.2.5
+  '@zag-js/combobox': 0.2.6
   '@zag-js/dialog': 0.2.4
   '@zag-js/editable': 0.2.5
   '@zag-js/hover-card': 0.1.4
@@ -29,7 +29,7 @@ specifiers:
   '@zag-js/range-slider': 0.2.5
   '@zag-js/rating-group': 0.2.5
   '@zag-js/react': 0.3.2
-  '@zag-js/select': 0.1.3
+  '@zag-js/select': 0.1.4
   '@zag-js/slider': 0.2.5
   '@zag-js/splitter': 0.2.4
   '@zag-js/tabs': 0.2.4
@@ -74,7 +74,7 @@ dependencies:
   '@emotion/styled': 11.9.3_t4da3hocwt6ljcf3o6em4qwqzm
   '@zag-js/accordion': 0.2.4
   '@zag-js/checkbox': 0.2.5
-  '@zag-js/combobox': 0.2.5
+  '@zag-js/combobox': 0.2.6
   '@zag-js/dialog': 0.2.4
   '@zag-js/editable': 0.2.5
   '@zag-js/hover-card': 0.1.4
@@ -88,7 +88,7 @@ dependencies:
   '@zag-js/range-slider': 0.2.5
   '@zag-js/rating-group': 0.2.5
   '@zag-js/react': 0.3.2_biqbaboplfbrettd7655fr4n2y
-  '@zag-js/select': 0.1.3
+  '@zag-js/select': 0.1.4
   '@zag-js/slider': 0.2.5
   '@zag-js/splitter': 0.2.4
   '@zag-js/tabs': 0.2.4
@@ -1529,8 +1529,8 @@ packages:
       '@zag-js/types': 0.3.1
     dev: false
 
-  /@zag-js/combobox/0.2.5:
-    resolution: {integrity: sha512-rSgOmY0LXKeio+aE0mhviSxQCHniJe+gHRjgkpm8plzcnuJTqeXOhCTIO5T17BnPKs4WD4CxAejpTUWJlUnxhw==}
+  /@zag-js/combobox/0.2.6:
+    resolution: {integrity: sha512-uS1JLbgrn3L4B0XiQxr1lKMOuwPF/4ecUb0oAp+uv1XRjlKf+LKbkYKuhDCRZtI3X9bXU+hzfbhJ7UjqVovyhA==}
     dependencies:
       '@zag-js/anatomy': 0.1.1
       '@zag-js/aria-hidden': 0.2.0
@@ -1702,8 +1702,8 @@ packages:
     resolution: {integrity: sha512-mxtPQnPABgAka6zVSvvauS00dgfO6+2n2c8sftdnpCnpTRq6mdCPxj4/NE169Wk5ldzxBbqmnjgYWjOlWV8lpw==}
     dev: false
 
-  /@zag-js/select/0.1.3:
-    resolution: {integrity: sha512-Lt4iA9ufRhRK08fR733U8XiyOl1RHDq75UDAybUkpJASoNlIAUfPyCOpB/Q4RKVtvAl0vWk48yrHeGmEFQ2zNw==}
+  /@zag-js/select/0.1.4:
+    resolution: {integrity: sha512-sumq4kEjj2R52LGD85AG0jxoZpwbU01mi5L6rVCRGGoNmiEVY3iqPjIcgWmLQnurTDXPv4XkkvfW3GKp/TtCSw==}
     dependencies:
       '@zag-js/anatomy': 0.1.1
       '@zag-js/core': 0.2.3

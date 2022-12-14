@@ -1,5 +1,8 @@
 import * as React from "react"
 
+const useSafeLayoutEffect =
+  typeof window !== "undefined" ? React.useLayoutEffect : React.useEffect
+
 /**
  * React effect hook that invokes only on update.
  * It doesn't invoke on mount
@@ -8,7 +11,7 @@ export const useUpdateEffect: typeof React.useEffect = (effect, deps) => {
   const renderCycleRef = React.useRef(false)
   const effectCycleRef = React.useRef(false)
 
-  React.useEffect(() => {
+  useSafeLayoutEffect(() => {
     const isMounted = renderCycleRef.current
     const shouldRun = isMounted && effectCycleRef.current
     if (shouldRun) {
@@ -18,7 +21,7 @@ export const useUpdateEffect: typeof React.useEffect = (effect, deps) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, deps)
 
-  React.useEffect(() => {
+  useSafeLayoutEffect(() => {
     renderCycleRef.current = true
     return () => {
       renderCycleRef.current = false
