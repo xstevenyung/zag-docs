@@ -17,6 +17,7 @@ const Header = (props: any) => (
 
 type PlaygroundProps = {
   component: React.ElementType
+  defaultContext?: Record<string, any>
   defaultProps?: Record<
     string,
     string | number | boolean | { options: string[]; default: string }
@@ -26,7 +27,14 @@ type PlaygroundProps = {
 }
 
 export function Playground(props: PlaygroundProps) {
-  const { component: Comp, defaultProps = {}, debug, hideControls } = props
+  const {
+    component: Comp,
+    defaultProps = {},
+    debug,
+    hideControls,
+    defaultContext,
+  } = props
+
   const [state, setState] = useState(
     Object.fromEntries(
       Object.entries(defaultProps).map(([key, value]) => [
@@ -55,7 +63,7 @@ export function Playground(props: PlaygroundProps) {
         bgImage="radial-gradient(circle,var(--colors-gray-200) 1px, transparent 1px);"
         bgSize="16px 16px"
       >
-        <Comp controls={state} />
+        <Comp controls={state} defaultContext={defaultContext} />
       </Flex>
 
       <Box flexBasis="1px" alignSelf="stretch" bg="gray.200" />

@@ -5,9 +5,12 @@ import { BiChevronDown, BiChevronUp } from "react-icons/bi"
 import { useId } from "react"
 
 export function NumberInput(props: any) {
-  const [state, send] = useMachine(numberInput.machine({ id: useId() }), {
-    context: props.controls,
-  })
+  const [state, send] = useMachine(
+    numberInput.machine({ id: useId(), ...props.defaultContext }),
+    {
+      context: props.controls,
+    },
+  )
 
   const api = numberInput.connect(state, send, normalizeProps)
 
