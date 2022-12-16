@@ -90,14 +90,14 @@ const [state, send] = useMachine(
 )
 ```
 
-## Readonly checkboxes
+## Making the checkbox readonly
 
-To make a checkbox readonly, set the context's `readonly` property to true
+To make a checkbox readonly, set the context's `readOnly` property to true
 
 ```jsx {3}
 const [state, send] = useMachine(
   checkbox.machine({
-    readonly: true,
+    readOnly: true,
   }),
 )
 ```

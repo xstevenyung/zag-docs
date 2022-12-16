@@ -81,14 +81,14 @@ const [state, send] = useMachine(
 )
 ```
 
-## Readonly radio group
+## Making the radio group readonly
 
-To make a radio group readonly, set the context's `readonly` property to true
+To make a radio group readonly, set the context's `readOnly` property to true
 
 ```jsx {3}
 const [state, send] = useMachine(
   radio.machine({
-    readonly: true,
+    readOnly: true,
   }),
 )
 ```
