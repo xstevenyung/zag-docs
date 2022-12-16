@@ -97,7 +97,6 @@ export function MultiframeworkTabs() {
             defaultProps={{
               min: -10,
               max: 20,
-              value: 0,
               disabled: false,
             }}
           />
