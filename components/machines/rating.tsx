@@ -38,7 +38,7 @@ type RadioProps = {
   controls: {
     allowHalf: boolean
     disabled: boolean
-    readonly: boolean
+    readOnly: boolean
     max: number
   }
 }

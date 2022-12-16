@@ -21,6 +21,7 @@ import { NestedMenu } from "components/machines/nested-menu"
 import { HoverCard } from "components/machines/hover-card"
 import { Pagination } from "components/machines/pagination"
 import { Select } from "./machines/select"
+import { Combobox } from "components/machines/combobox"
 
 const components = {
   Dialog: () => (
@@ -41,6 +42,21 @@ const components = {
         indeterminate: false,
         disabled: false,
         readOnly: false,
+      }}
+    />
+  ),
+  Combobox: () => (
+    <Playground
+      component={Combobox}
+      defaultProps={{
+        disabled: false,
+        readOnly: false,
+        blurOnSelect: false,
+        loop: false,
+        inputBehavior: {
+          default: "autohighlight",
+          options: ["autohighlight", "autocomplete", "none"],
+        },
       }}
     />
   ),

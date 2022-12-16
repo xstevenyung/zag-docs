@@ -78,14 +78,14 @@ const [state, send] = useMachine(
 )
 ```
 
-## Readonly rating
+## Making the rating readonly
 
-To make rating readonly, set the context's `readonly` property to true
+To make rating readonly, set the context's `readOnly` property to true
 
 ```jsx {3}
 const [state, send] = useMachine(
   rating.machine({
-    readonly: true,
+    readOnly: true,
   }),
 )
 ```

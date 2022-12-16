@@ -61,6 +61,7 @@ const sidebar: Record<"docs", SidebarItem[]> = {
       items: [
         { type: "doc", label: "Accordion", id: "accordion" },
         { type: "doc", label: "Checkbox", id: "checkbox" },
+        { type: "doc", label: "Combobox", id: "combobox" },
         { type: "doc", label: "Dialog", id: "dialog" },
         { type: "doc", label: "Editable", id: "editable" },
         { type: "doc", label: "Hover Card", id: "hover-card" },

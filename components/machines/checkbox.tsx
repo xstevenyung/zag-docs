@@ -7,7 +7,7 @@ type CheckboxProps = {
   controls: {
     indeterminate: boolean
     disabled: boolean
-    readonly: boolean
+    readOnly: boolean
   }
 }
 
