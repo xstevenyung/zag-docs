@@ -11,7 +11,10 @@ export function getPaginationData(framework: string) {
     if (group.type !== "category") continue
     const items = group.items.map((item) => ({
       label: item.label,
-      url: formatUrl(group.id, item.id, framework),
+      url:
+        item.type === "doc" && item.href
+          ? item.href
+          : formatUrl(group.id, item.id, framework),
     }))
     result.push(...items)
   }
