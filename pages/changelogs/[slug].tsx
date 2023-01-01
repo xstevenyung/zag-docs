@@ -33,7 +33,7 @@ export default function Page(props: PageProps) {
           getSlug: (slug) => slug,
         }}
       >
-        <Stack spacing="10" divider={<StackDivider />}>
+        <div>
           <Stack>
             <Heading as="h1" textStyle="display.lg">
               Changelog
@@ -51,7 +51,7 @@ export default function Page(props: PageProps) {
           </Stack>
 
           <div>{mdx}</div>
-        </Stack>
+        </div>
       </DocsLayout>
     </>
   )
