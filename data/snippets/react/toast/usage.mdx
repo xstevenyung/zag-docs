@@ -22,7 +22,7 @@ const ToastContext = createContext()
 const useToast = () => useContext(ToastContext)
 
 // 3. Create the toast group provider
-export function ToastProvider() {
+export function ToastProvider({ children }) {
   const [state, send] = useMachine(toast.group.machine({ id: "1" }))
 
   const api = toast.group.connect(state, send, normalizeProps)
@@ -36,6 +36,8 @@ export function ToastProvider() {
           ))}
         </div>
       ))}
+
+      {children}
     </ToastContext.Provider>
   )
 }
